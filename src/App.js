@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        Acqua client app!
+        Acqua client app! Heroku auto-deploy from Github
       </div>
     );
   }
