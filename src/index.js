@@ -2,6 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './indexStyle.css';
+
+import WebFont from 'webfontloader';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -12,6 +15,12 @@ import reduxThunk from 'redux-thunk';
 
 import reducers from './reducers';
 import App from './components/App';
+
+WebFont.load({
+    google:{
+        families: ['Raleway', 'Source Sans Pro']
+    }
+});
 
 const store = createStore(
     reducers,

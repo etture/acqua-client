@@ -3,9 +3,9 @@ import {Link, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import Signin from "./Signin";
-import Signup from "./Signup";
-import Dashboard from "./Dashboard";
+import Signin from "./pre-signin/Signin";
+import Signup from "./pre-signin/Signup";
+import Dashboard from "./post-signin/Dashboard";
 
 class App extends Component {
     componentWillMount(){
