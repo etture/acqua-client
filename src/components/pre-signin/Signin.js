@@ -40,7 +40,7 @@ class Signin extends Component {
                     <Logo/>
                     <FieldCard>
                         <div className="card-body mx-3">
-                            <h4 className="card-title text-center mb-5 mt-3 text-gradient">Sign in to acqua</h4>
+                            <h4 className="card-title text-center mb-4 mt-3 text-gradient">Sign in to acqua</h4>
                             <form onSubmit={handleSubmit(this.onSubmit)}>
                                 <Field
                                     placeholder="Email"

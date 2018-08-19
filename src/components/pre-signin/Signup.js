@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {reduxForm, Field} from 'redux-form';
 import {compose} from 'redux';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 
 import * as actions from '../../actions';
 
@@ -79,6 +80,9 @@ class Signup extends Component {
                                 />
                                 <button type="submit" className="btn btn-primary btn-block mt-4 btn-gradient">Create Account</button>
                             </form>
+                        </div>
+                        <div className="card-footer text-center">
+                            <Link to="/signin" className="text">Go back</Link>
                         </div>
                     </FieldCard>
                 </CenterView>
