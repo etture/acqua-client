@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Signin from "./Signin";
+import Signup from "./Signup";
 import Dashboard from "./Dashboard";
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/signin" component={Signin}/>
+                    <Route path="/signup" component={Signup}/>
                     <Route path="/home/dashboard" component={Dashboard}/>
                 </Switch>
             </BrowserRouter>
