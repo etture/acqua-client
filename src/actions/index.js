@@ -5,6 +5,7 @@ export const signup = (formProps, callback) => async dispatch => {
     try{
         console.log(formProps);
         const response = await axios.post('https://acqua-api.herokuapp.com/api/auth/signup', formProps);
+        // const response = await axios.post('http://localhost:3009/api/auth/signup', formProps);
         dispatch({type: AUTH_USER, payload: response.data.token});
         localStorage.setItem('token', response.data.token);
         callback();
@@ -17,6 +18,7 @@ export const signin = (formProps, callback) => async dispatch => {
     try{
         console.log(formProps);
         const response = await axios.post('https://acqua-api.herokuapp.com/api/auth/signin', formProps);
+        // const response = await axios.post('http://localhost:3009/api/auth/signin', formProps);
         dispatch({type: AUTH_USER, payload: response.data.token});
         localStorage.setItem('token', response.data.token);
         callback();
